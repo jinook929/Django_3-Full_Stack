@@ -1,0 +1,29 @@
+{% extends "generator/layout.html" %}
+
+{% block body %}
+    <div class="container text-center">
+        <h1>Password Generator</h1>
+        <p><a id="aboutlink" href="{% url 'about' %}">About this app</a></p>
+        <form action="{% url 'password' %}">
+            <select name="length">
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12" selected="selected">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+            </select> Length<br>
+            <label for="upper"><input type="checkbox" name="upper"> Uppercase</label><br>
+            <label for="number"><input type="checkbox" name="number"> Numbers</label><br>
+            <label for="special"><input type="checkbox" name="special"> Special Characters</label><br>
+            <input class="btn btn-primary btn-lg" type="submit" value="Generate Password">
+        </form>
+    </div>
+{% endblock %}

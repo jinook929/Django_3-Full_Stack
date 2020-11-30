@@ -1,0 +1,38 @@
+/* Common Settings */
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: slateblue;
+    margin-top: 20px;
+}
+
+/* Main Page */
+select {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+/* Password Page */
+#generated {
+    margin-bottom: 0;
+}
+
+#password {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#copyinstruction {
+    margin-top: 5px;
+}
+
+/* About Page */
+#aboutlink {
+    margin-bottom: 20px;
+}
